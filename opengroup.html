@@ -22,6 +22,59 @@
         background: rgba(255, 82, 103, 1);
         border-radius: 8px;
         height: 3.413333rem;
+        width: 9.146667rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .top_left {
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 1.706667rem;
+        height: 3.413333rem;
+        padding-left: .426667rem;
+    }
+
+    .top_left img {
+
+        width: 1.706667rem;
+        height: 1.706667rem;
+        border-radius: .853333rem;
+    }
+
+    .top_cent {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: .32rem;
+        width: 4.88rem;
+        height: 3.413333rem;
+    }
+
+    .top_right {
+        margin-top: .533333rem;
+        float: right;
+        width: 1.813333rem;
+        height: .746667rem;
+        background: linear-gradient(0deg, rgba(143, 193, 254, 1) 0%, rgba(122, 175, 251, 1) 100%);
+        border-radius: 24px 0px 0px 24px;
+        text-align: center;
+    }
+
+    .top_right span {
+        width: 70px;
+        height: 23px;
+        line-height: .746667rem;
+        font-size: 24px;
+        font-family: PingFang-SC-Medium;
+        color: rgba(255, 255, 255, 1);
     }
 
     .opengroug_main_div ul {
@@ -33,15 +86,147 @@
         background: rgba(255, 255, 255, 1);
         border-radius: 8px;
     }
+
+    .top_cent_title {
+        width: 5.6rem;
+        height: 60px;
+        font-size: 48px;
+        font-family: PingFang-SC-Bold;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .top_cent_cent {
+        width: 5.6rem;
+        height: 23px;
+        font-size: 24px;
+        font-family: PingFang-SC-Medium;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: .426667rem;
+    }
+
+    .li_left {
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: .96rem;
+        height: 2.106667rem;
+        padding-left: .426667rem;
+    }
+
+    .li_left img {
+        width: .96rem;
+        height: .96rem;
+        border-radius: .48rem;
+    }
+
+    .li_cent {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: .32rem;
+        width: 5.38rem;
+        height: 2.106667rem;
+    }
+
+    .li_cent_title {
+        font-size: 32px;
+        font-family: PingFang-SC-Medium;
+        color: rgba(26, 29, 29, 1);
+        line-height: 70px;
+    }
+
+    .li_cent_cent {
+        font-size: 24px;
+        font-family: PingFang-SC-Medium;
+        color: rgba(102, 102, 102, 1);
+    }
+
+    .li_right {
+        display: flex;
+        text-align: right;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: .32rem;
+        width: 1.466667rem;
+        height: 2.106667rem;
+    }
+
+    .color1{
+        background:linear-gradient(-90deg,rgba(255,185,71,1) 0%,rgba(255,198,107,1) 100%);
+    }
+
+    .color2 {
+        color: rgba(102, 102, 102, 1);
+    }
+
+    .color3 {
+        color: rgba(200, 200, 200, 1);
+    }
 </style>
 
 <body>
     <div class="opengroug_main_div">
         <div class="opengroug_top">
-
+            <div class="top_left">
+                <img src="../images/yuantiao.jpg">
+            </div>
+            <div class="top_cent">
+                <p class="top_cent_title">JOJO欧尼</p>
+                <p class="top_cent_cent">认证用户才可以开团</p>
+            </div>
+            <div class="top_right color1">
+                <span>未认证</span>
+            </div>
         </div>
         <ul>
-            <li></li>
+            <li class="mui-navigate-right">
+                <div class="li_left">
+                    <img src="../images/yuantiao.jpg">
+                </div>
+                <div class="li_cent">
+                    <p class="li_cent_title">我的资料</p>
+                    <p class="li_cent_cent">完善个人信息，体验更多服务</p>
+                </div>
+                <div class="li_right color2">
+                    去认证&nbsp;&nbsp;>
+                </div>
+            </li>
+            <li class="mui-navigate-right">
+                <div class="li_left">
+                    <img src="../images/yuantiao.jpg">
+                </div>
+                <div class="li_cent">
+                    <p class="li_cent_title">立即开团</p>
+                    <p class="li_cent_cent">平台认证后，点此开团</p>
+                </div>
+                <div class="li_right color3">
+                    去开团&nbsp;&nbsp;>
+                </div>
+            </li>
+            <li class="mui-navigate-right">
+                <div class="li_left">
+                    <img src="../images/yuantiao.jpg">
+                </div>
+                <div class="li_cent">
+                    <p class="li_cent_title">我的余额</p>
+                    <p class="li_cent_cent">分享越多，奖励越多！</p>
+                </div>
+                <div class="li_right color3">
+                    提现&nbsp;&nbsp;>
+                </div>
+            </li>
         </ul>
     </div>
 </body>
