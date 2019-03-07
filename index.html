@@ -2,16 +2,195 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"   content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mui.min.css">
+    <link rel="stylesheet" href="/css/all.css">
     <title>唐小主和她有趣的朋友们</title>
 </head>
 
+<style>
+    .index_main{
+        width: 10rem;
+        padding: 0px 0.2rem;
+    }
+
+    .index_top {
+
+    }
+
+    .index_top span {
+        width: 93px;
+        height: 23px;
+        font-size: 12px;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        color: rgba(102, 102, 102, 1);
+        line-height: 23px;
+    }
+
+    .index_top .mui-slider {
+
+    }
+
+    .mui-slider-item img {
+        height: 180px;
+        border-radius: 8px;
+    }
+
+    .mui-slider-indicator{
+        bottom: 78px;
+    }
+
+    .span-title {
+        height:50px;
+        line-height: 50px;
+        font-size: 20px;
+        font-family: PingFang-SC-Bold;
+        font-weight: bold;
+        color: rgba(26, 29, 29, 1);
+    }
+
+    .span-cent {
+        font-size: 12px;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        color: rgba(102, 102, 102, 1);
+    }
+
+    .index_list{
+        padding: 20px 20px;
+    }
+
+    .list_top_title{
+        height:30px;
+        font-size:16px;
+        font-family:PingFang-SC-Medium;
+        font-weight:500;
+        color:rgba(26,29,29,1);
+        line-height:30px;
+    }
+
+    .list_top_cent{
+        height:24px;
+        font-size:12px;
+        font-family:PingFang-SC-Medium;
+        font-weight:500;
+        color:rgba(102,102,102,1);
+        line-height:24px;
+    }
+
+
+    .list_ul ul{
+        
+    }
+
+    .list_ul_li{
+        width: 40%;
+        border-radius:8px;
+    }
+
+    .list_ul_li img{
+        width: 128px;
+    }
+
+</style>
+
 <body>
-    <a href="">这是一个href属性为空的链接</a>
-    <br>
-    <a href="http://www.baidu.com">这是一个href属性设为绝对路径(http://www.baidu.com)的链接</a>
-    <br>
-    <a href="test.html">这是一个href属性设置为相对路径（test.html）的链接</a>
+    <div class="index_main">
+        <div class="index_top">
+            <span>新品推荐</span>
+            <div id="slider" class="mui-slider">
+                <div class="mui-slider-group mui-slider-loop">
+                    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img src="../images/yuantiao.jpg">
+                            <p class="span-title">层真相只有一个</p>
+                            <p class="span-cent">悬疑、猜忌，谁才是凶手？</p>
+                        </a>
+                    </div>
+                    <!-- 第一张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="../images/shuijiao.jpg">
+                            <p class="span-title">层真相只有一个</p>
+                            <p class="span-cent">悬疑、猜忌，谁才是凶手？</p>
+                        </a>
+                    </div>
+                    <!-- 第二张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="../images/muwu.jpg">
+                            <p class="span-title">层真相只有一个</p>
+                            <p class="span-cent">悬疑、猜忌，谁才是凶手？</p>
+                        </a>
+                    </div>
+                    <!-- 第三张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="../images/cbd.jpg">
+                            <p class="span-title">层真相只有一个</p>
+                            <p class="span-cent">悬疑、猜忌，谁才是凶手？</p>
+                        </a>
+                    </div>
+                    <!-- 第四张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="../images/yuantiao.jpg">
+                            <p class="span-title">层真相只有一个</p>
+                            <p class="span-cent">悬疑、猜忌，谁才是凶手？</p>
+                        </a>
+                    </div>
+                    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img src="../images/shuijiao.jpg">
+                            <p class="span-title">层真相只有一个</p>
+                            <p class="span-cent">悬疑、猜忌，谁才是凶手？</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="mui-slider-indicator">
+                    <div class="mui-indicator mui-active"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="index_list">
+            <div class="list_top">
+                <p class="list_top_title">推荐剧本</p>
+                <p class="list_top_cent">在阴谋和欺骗中剥开层层迷雾！</p>
+            </div>
+            <div class="list_ul">
+                <ul>
+                    <li class="list_ul_li"> 
+                        <img src="../images/yuantiao.jpg">
+                        <p >三堂会审</p>
+                        <p >大邵开仁年间，政局可谓...</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script src="/js/mui.min.js"></script>
+<script src="/js/rem01.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+    var slider = mui("#slider");
+    slider.slider({
+        interval: 0
+    });
+</script>
+
 
 </html>
